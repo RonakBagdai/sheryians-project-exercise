@@ -1,1 +1,1 @@
-# sheryians-project-exercise-1
+# sheryians-project-exercises
