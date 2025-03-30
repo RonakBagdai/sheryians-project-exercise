@@ -1,0 +1,394 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="gu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium spices from Ronak Trading, Gondal - 360311. Contact Satishbhai Bagdai at 9426844080 for the best Indian spices."
+    />
+    <meta
+      name="keywords"
+      content="Indian spices, Ronak Trading, Gondal, premium spices, Kashmiri chili, turmeric, cumin, garam masala"
+    />
+    <meta name="author" content="Ronak Trading" />
+    <title>રોનક ટ્રેડિંગ - ભરે મસાલા હરવા લાયક મસાલા</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Sans Gujarati", "Poppins", sans-serif;
+        background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 15px;
+        line-height: 1.6;
+      }
+
+      /* Main container */
+      .ad-container {
+        background: #fff;
+        max-width: 900px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        border: 2px solid #333;
+      }
+
+      /* Festive banner with triangles */
+      .banner {
+        width: 100%;
+        height: 50px;
+        background: url("https://via.placeholder.com/900x50?text=Festive+Banner")
+          no-repeat center/cover;
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: repeating-linear-gradient(
+          45deg,
+          #ff4d4d,
+          #ff4d4d 20px,
+          #4da8ff 20px,
+          #4da8ff 40px,
+          #4dff4d 40px,
+          #4dff4d 60px,
+          #ffd94d 60px,
+          #ffd94d 80px
+        );
+        clip-path: polygon(
+          0 0,
+          5% 100%,
+          10% 0,
+          15% 100%,
+          20% 0,
+          25% 100%,
+          30% 0,
+          35% 100%,
+          40% 0,
+          45% 100%,
+          50% 0,
+          55% 100%,
+          60% 0,
+          65% 100%,
+          70% 0,
+          75% 100%,
+          80% 0,
+          85% 100%,
+          90% 0,
+          95% 100%,
+          100% 0
+        );
+      }
+
+      /* Title */
+      .title {
+        font-size: 2.2rem;
+        color: #d32f2f;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      /* Quote */
+      .quote {
+        font-size: 1.7rem;
+        font-style: italic;
+        color: #444;
+        margin: 20px 0;
+      }
+
+      .quote span {
+        color: #ff4500;
+        font-weight: 700;
+      }
+
+      /* Spice grid */
+      .spice-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+        padding: 20px 0;
+        background: url("https://images.unsplash.com/photo-1615485290382-441e41d49f0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80")
+          no-repeat center/cover;
+        border-radius: 15px;
+      }
+
+      .spice-item {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .spice-item:hover {
+        transform: scale(1.05);
+      }
+
+      .spice-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .spice-item p {
+        margin-top: 8px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #333;
+      }
+
+      /* Additional text */
+      .additional-text {
+        font-size: 1.8rem;
+        color: #333;
+        margin: 20px 0;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Footer */
+      .footer {
+        background: #d32f2f;
+        color: #fff;
+        padding: 20px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        margin-top: 20px;
+        position: relative;
+      }
+
+      .footer p {
+        margin: 10px 0;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .footer a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .footer::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background: url("https://via.placeholder.com/50?text=Logo") no-repeat
+          center/cover;
+        opacity: 0.2;
+      }
+
+      /* Responsive design */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        .ad-container {
+          padding: 15px;
+        }
+
+        .banner {
+          height: 40px;
+        }
+
+        .banner::before {
+          height: 40px;
+        }
+
+        .title {
+          font-size: 1.6rem;
+        }
+
+        .quote {
+          font-size: 1.2rem;
+        }
+
+        .spice-grid {
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          gap: 10px;
+        }
+
+        .spice-item img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .spice-item p {
+          font-size: 0.8rem;
+        }
+
+        .additional-text {
+          font-size: 1.3rem;
+        }
+
+        .footer {
+          font-size: 1rem;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ad-container">
+      <div
+        class="banner"
+        role="img"
+        aria-label="Festive banner with colorful triangles"
+      ></div>
+
+      <h1 class="title">બારે માસ ભરવા લાયક મસાલા</h1>
+      <p class="quote">
+        You can’t buy <i>Happiness</i>, but you can buy
+        <span>Indian Spices</span>!
+      </p>
+
+      <div class="spice-grid">
+        <div class="spice-item">
+          <img
+            src="https://www.spicemountain.co.uk/wp-content/uploads/2023/05/kashmiri.jpg"
+            alt="Kashmiri Chili Powder"
+          />
+          <p>કાશ્મીરી મરચું</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/12/RI/IS/XD/82393601/resham-patti-mirchi-powder.png"
+            alt="Resham Patto Chili"
+          />
+          <p>રેશમ પટ્ટો મરચું</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2024/1/379572498/UD/HM/AK/5751538/dry-turmeric-powder.jpg"
+            alt="Cinnamon Powder"
+          />
+          <p>સેલમ હળદર</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2024/7/433050925/XY/RO/AH/77148977/mudda-turmeric-powder.png"
+            alt="Mace Powder"
+          />
+          <p>મૂડાની હળદર</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2024/6/429537113/VS/KS/AV/210652313/dhania-jeera-powder.jpg"
+            alt="Coriander Powder"
+          />
+          <p>ધાણાજીરુ</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrJsV7uUtuaDDdWKuoX0HV71Zwhh0LcjSAQ&s"
+            alt="Asafoetida Powder"
+          />
+          <p>હિંગ પાઉડર</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://www.roopmahalrice.com/wp-content/uploads/2023/12/Garam-Masala-Recipe-1-1024x768.jpg"
+            alt="Garam Masala"
+          />
+          <p>ગરમ મસાલો</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://cdn.shopaccino.com/edible-smart/products/cumin--jeera-942082_l.jpg?v=545"
+            alt="Cumin Powder"
+          />
+          <p>જીરું પેકિંગ</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://milletamma.com/cdn/shop/products/mustardseeds_cd88e5f4-b339-40ae-8b86-ed317fdcc816.png?v=1717386827"
+            alt="Mustard Seeds"
+          />
+          <p>રાય</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://organicmandya.com/cdn/shop/files/MethiSeed_2_2922b02a-1f60-415f-9bb9-a79762798e23.jpg?v=1738227102&width=1000"
+            alt="Fenugreek Seeds"
+          />
+          <p>મેથી</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://india.neelamfoodland.in/cdn/shop/products/IMG_7674_1200x.jpg?v=1734378893"
+            alt="Carom Seeds"
+          />
+          <p>રાયકુરિયા</p>
+        </div>
+        <div class="spice-item">
+          <img
+            src="https://india.neelamfoodland.in/cdn/shop/products/IMG_7120_1200x.jpg?v=1734378908"
+            alt="Fenugreek Seeds"
+          />
+          <p>મેથીકુરિયા</p>
+        </div>
+      </div>
+
+      <p class="additional-text">તમામ મસાલાને લાગતી તમામ વસ્તુઓ માટે</p>
+
+      <div class="footer">
+        <p>
+          સંપર્ક કરો: સતીષભાઈ બગદાઈ (ગોપાલભાઈ) |
+          <a href="tel:+919426844080">9426844080</a>
+        </p>
+        <p>
+          'રોનક ટ્રેડિંગ', સેફરન સ્ક્વેર, શોપ નં. 4, જુના કોર્ટ નજીક , ગોંડલ -
+          360311
+        </p>
+        <p>From Our Mother Earth to Your Home</p>
+      </div>
+    </div>
+  </body>
+</html>
