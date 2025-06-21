@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/*
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #4fd1a5;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.todo-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  min-width: 320px;
+}
+
+.todo-card h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.todo-card p {
+  color: gray;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.todo-card input[type="date"],
+.task-input input {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.task-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-input button {
+  padding: 10px 14px;
+  font-size: 20px;
+  background-color: #28c76f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.todo-list span {
+  cursor: pointer;
+}
+
+.todo-list .done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+button.delete-all {
+  margin-top: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todo-calendar {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.todo-calendar h2 {
+  margin-bottom: 10px;
+}
+
+.todo-calendar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.todo-calendar li {
+  margin-bottom: 6px;
+}
+
+.todo-calendar a {
+  color: #2e6dd8;
+  text-decoration: none;
+}
+
+.todo-calendar a:hover {
+  text-decoration: underline;
+} */
