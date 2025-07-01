@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>macOS Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Desktop -->
+    <div id="desktop">
+      <div id="context-menu">
+        <ul>
+          <li id="create-folder">New Folder</li>
+          <div class="divider"></div>
+          <li>Get Info</li>
+          <li id="change-wallpaper">Change Wallpaper…</li>
+          <li>Edit Widgets…</li>
+          <div class="divider"></div>
+          <li>Use Stacks</li>
+          <li>Sort By ▶</li>
+          <li>Clean Up</li>
+          <li>Clean Up By ▶</li>
+          <li>Show View Options</li>
+          <div class="divider"></div>
+          <li>Import from iPhone</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="finder-context-menu">
+      <ul>
+        <li id="new-folder">New Folder</li>
+        <li>Get Info</li>
+        <li>View</li>
+        <li>Use Groups</li>
+        <li>Sort By</li>
+        <li>Show View Options</li>
+      </ul>
+    </div>
+
+    <!-- Top Menu Bar -->
+    <div id="menu-bar">
+      <div class="menu-left">
+        <img
+          src="./assets/app-icons/icons8-apple-inc-48.png"
+          id="apple-logo"
+          class="menu-icon"
+          alt=""
+        />
+        <span id="finder">Finder</span>
+        <span id="file">File</span>
+        <span id="edit">Edit</span>
+        <span id="view">View</span>
+        <span id="go">Go</span>
+        <span id="window">Window</span>
+        <span id="help">Help</span>
+      </div>
+      <!-- show date -->
+      <div class="menu-right">
+        <img
+          src="./assets/app-icons/Menu Label.svg"
+          id="control-icon"
+          class="menu-icon"
+          alt=""
+        />
+        <span id="date"></span>
+        <span id="clock"></span>
+      </div>
+
+      <!-- Apple Menu -->
+      <div id="apple-menu" class="apple-menu hidden">
+        <ul>
+          <li>About This Mac</li>
+          <li>System Preferences...</li>
+          <li>App Store...</li>
+          <div class="divider"></div>
+          <li>Sleep</li>
+          <li>Restart...</li>
+          <li>Shut Down...</li>
+          <div class="divider"></div>
+          <li>Log Out Ronak...</li>
+        </ul>
+      </div>
+
+      <!-- Finder -->
+      <div id="finder-menu" class="finder-menu hidden">
+        <ul>
+          <li>About Finder</li>
+          <li>Preferences...</li>
+          <div class="divider"></div>
+          <li>Empty Trash</li>
+          <div class="divider"></div>
+          <li>Services</li>
+          <li>Hide Finder</li>
+          <li>Hide Others</li>
+          <li>Show All</li>
+          <div class="divider"></div>
+          <li>Quit Finder</li>
+        </ul>
+      </div>
+
+      <!-- File Menu -->
+      <div id="file-menu" class="file-menu hidden">
+        <ul>
+          <li>New Finder Window</li>
+          <li>New Folder</li>
+          <li>New Smart Folder</li>
+          <li>New Tab</li>
+          <div class="divider"></div>
+          <li>Open</li>
+          <li>Open With</li>
+          <li>Close Window</li>
+          <li>Get Info</li>
+          <div class="divider"></div>
+          <li>Move to Trash</li>
+          <li>Duplicate</li>
+          <li>Rename</li>
+          <div class="divider"></div>
+          <li>Print</li>
+          <li>Share</li>
+          <div class="divider"></div>
+          <li>Find</li>
+          <li>Find Next</li>
+          <li>Find Previous</li>
+          <div class="divider"></div>
+          <li>Show All</li>
+        </ul>
+      </div>
+
+      <!-- Edit Menu -->
+      <div id="edit-menu" class="edit-menu hidden">
+        <ul>
+          <li>Undo</li>
+          <li>Redo</li>
+          <div class="divider"></div>
+          <li>Cut</li>
+          <li>Copy</li>
+          <li>Paste</li>
+          <div class="divider"></div>
+          <li>Select All</li>
+        </ul>
+      </div>
+
+      <!-- View Menu -->
+      <div id="view-menu" class="view-menu hidden">
+        <ul>
+          <li>Show Toolbar</li>
+          <li>Show Status Bar</li>
+          <li>Show Path Bar</li>
+        </ul>
+      </div>
+
+      <!-- Go Menu -->
+      <div id="go-menu" class="go-menu hidden">
+        <ul>
+          <li>Back</li>
+          <li>Forward</li>
+          <li>Up</li>
+          <li>All My Files</li>
+        </ul>
+      </div>
+
+      <!-- Window Menu -->
+      <div id="window-menu" class="window-menu hidden">
+        <ul>
+          <li>Minimize</li>
+          <li>Zoom</li>
+          <li>Enter Full Screen</li>
+        </ul>
+      </div>
+
+      <!-- Help Menu -->
+      <div id="help-menu" class="help-menu hidden">
+        <ul>
+          <li>Help Center</li>
+          <li>Feedback</li>
+          <li>Report a Problem</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="control-center" class="control-center hidden">
+      <div class="top-section">
+        <div class="wifi-item active">
+          Wi-Fi <span class="subtext">Ronak</span>
+        </div>
+        <div class="bluetooth-item active">
+          Bluetooth <span class="subtext">On</span>
+        </div>
+        <div class="airdrop-item">AirDrop <span class="subtext">Off</span></div>
+      </div>
+
+      <div class="button-grid">
+        <div class="grid-btn">🌙 Focus</div>
+        <div class="grid-btn">🖥 Stage Manager</div>
+        <div class="grid-btn">📺 Screen Mirroring</div>
+      </div>
+
+      <div class="slider-section">
+        <div>Display</div>
+        <input type="range" min="0" max="100" value="70" />
+      </div>
+
+      <div class="slider-section">
+        <div>Sound</div>
+        <input type="range" min="0" max="100" value="50" />
+      </div>
+
+      <div class="music-section">
+        <div>🎵 Music</div>
+        <div>
+          <button>▶️</button>
+          <button>⏭️</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dock -->
+    <div id="dock">
+      <img
+        src="assets/app-icons/finder-2021-09-10.webp"
+        class="dock-icon"
+        data-app="Finder"
+      />
+      <img
+        src="assets/app-icons/terminal-2021-06-03.webp"
+        class="dock-icon"
+        data-app="Terminal"
+      />
+      <img
+        src="assets/app-icons/notes-2021-05-25.webp"
+        class="dock-icon"
+        data-app="Notes"
+      />
+    </div>
+
+    <script src="macos.js"></script>
+  </body>
+</html>
