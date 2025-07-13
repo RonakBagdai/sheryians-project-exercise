@@ -2,6 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://RonakBagdai.github.io/sheryians-project-exercise",
   "type": "module",
   "scripts": {
     "dev": "vite",
