@@ -8,4 +8,4 @@
 - [Project Exercise 6](Project-Exercise-6/index.html)
 - [Day 8](Day-8/grid.html)
 - [Day-93](Day-93/Frontend/index.html)
-- [mern-graphql-breach-checker](mern-graphql-breach-checker/client/index.html)
+- [mern-graphql-breach-checker](https://ronakbagdai.github.io/sheryians-project-exercise/mern-graphql-breach-checker)
