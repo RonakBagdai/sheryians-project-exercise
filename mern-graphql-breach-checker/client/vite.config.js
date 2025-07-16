@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/sheryians-project-exercise/mern-graphql-breach-checker/',
+  base: "/sheryians-project-exercise/",
   plugins: [react()],
-})
+});
