@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/sheryians-project-exercise/",
   plugins: [react()],
+  base: "/", // <-- THIS IS IMPORTANT FOR RENDER!
 });
