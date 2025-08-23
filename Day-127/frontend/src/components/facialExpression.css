@@ -1,0 +1,109 @@
+.mood-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px var(--shadow-color);
+  border: 1px solid var(--card-border);
+  width: 100%;
+  max-width: 450px;
+}
+
+.mood-element h2 {
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, var(--accent-color-1), #56cfe1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mood-element p {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.user-video-feed {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(100, 223, 223, 0.5);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.mood-element button {
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, var(--accent-color-3), #6930c3);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 48, 195, 0.3);
+  width: 80%;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mood-element button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(106, 48, 195, 0.4);
+}
+
+.mood-element button:active {
+  transform: translateY(1px);
+}
+
+.mood-result {
+  background: var(--card-bg);
+  padding: 15px 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(100, 223, 223, 0.3);
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mood-result p {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.mood-result strong {
+  color: var(--accent-color-1);
+  font-weight: 700;
+  text-transform: capitalize;
+}

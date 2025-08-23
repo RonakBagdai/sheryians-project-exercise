@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as faceapi from "face-api.js";
+import "./facialExpression.css";
 
-export default function FacialExpression() {
+export default function FacialExpression({ onMoodDetected }) {
   const videoRef = useRef();
+  const [detectedMood, setDetectedMood] = useState(null);
 
   const loadModels = async () => {
     const MODEL_URL = "/models";
@@ -39,6 +41,10 @@ export default function FacialExpression() {
     }
 
     console.log(_expression);
+    setDetectedMood(_expression);
+    if (onMoodDetected) {
+      onMoodDetected(_expression);
+    }
   }
 
   useEffect(() => {
@@ -46,14 +52,27 @@ export default function FacialExpression() {
   }, []);
 
   return (
-    <div style={{ position: "relative" }}>
-      <video
-        ref={videoRef}
-        autoPlay
-        muted
-        style={{ width: "720px", height: "560px" }}
-      />
-      <button onClick={detectMood}>Detect Mood</button>
+    <div className="mood-element">
+      <h2>Mood Detector</h2>
+      <p>Let us analyze your facial expression to detect your current mood</p>
+      
+      <div className="video-container">
+        <video ref={videoRef} autoPlay muted className="user-video-feed" />
+        <div className="video-overlay"></div>
+      </div>
+      
+      <button onClick={detectMood}>
+        <i className="ri-emotion-line" style={{ marginRight: '8px' }}></i>
+        Detect My Mood
+      </button>
+      
+      {detectedMood && (
+        <div className="mood-result">
+          <p>
+            Detected Mood: <strong>{detectedMood}</strong>
+          </p>
+        </div>
+      )}
     </div>
   );
 }

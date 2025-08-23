@@ -1,42 +1,90 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Main App Styles */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-gradient);
+  color: var(--text-primary);
+  padding: clamp(1rem, 5vw, 2rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.app-header {
   text-align: center;
+  margin-bottom: clamp(1.5rem, 5vw, 2.5rem);
+  position: relative;
+  z-index: 2;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: var(--accent-gradient-1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.app-subtitle {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive layout */
+@media (min-width: 1024px) {
+  .app-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Background decorative elements */
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  filter: blur(60px);
+  z-index: 1;
 }
 
-.card {
-  padding: 2em;
+.bg-circle-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--accent-color-2);
+  top: -100px;
+  left: -100px;
 }
 
-.read-the-docs {
-  color: #888;
+.bg-circle-2 {
+  width: 400px;
+  height: 400px;
+  background: var(--accent-color-1);
+  bottom: -150px;
+  right: -150px;
+}
+
+.bg-circle-3 {
+  width: 200px;
+  height: 200px;
+  background: var(--accent-color-3);
+  top: 40%;
+  left: 30%;
 }
