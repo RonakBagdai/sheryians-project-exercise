@@ -1,0 +1,125 @@
+/* Mobile-first, minimalist auth form styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.auth {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-5) var(--space-4);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(var(--space-5), 4vw, var(--space-6));
+  box-shadow: var(--shadow-sm);
+}
+
+.auth-title {
+  margin: 0 0 var(--space-4);
+  font-size: clamp(var(--text-lg), 2.8vw, 1.4rem);
+  font-weight: 650;
+}
+
+.auth-form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.field input {
+  width: 100%;
+  padding: calc(var(--space-3) + 2px) var(--space-4);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+.field input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.field input:focus-visible {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--color-focus) 20%, transparent);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 600;
+  transition: transform 120ms ease, filter 160ms ease, opacity 160ms ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.02);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.auth-hint {
+  margin: var(--space-3) 0 0;
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.link {
+  color: var(--color-focus);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Larger screens */
+@media (min-width: 640px) {
+  .auth-title {
+    font-size: var(--text-xl);
+  }
+}

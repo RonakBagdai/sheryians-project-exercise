@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/styles/theme.css" />
+    <link rel="stylesheet" href="/styles/auth-form.css" />
+  </head>
+  <body>
+    <main class="auth">
+      <section class="auth-card" aria-labelledby="register-title">
+        <h1 id="register-title" class="auth-title">Create your account</h1>
+
+        <form
+          class="auth-form"
+          action="/auth/register"
+          method="POST"
+          autocomplete="on"
+        >
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="username">Username</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              placeholder="yourusername"
+              minlength="3"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              placeholder="••••••••"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <button class="btn-primary" type="submit">Create account</button>
+
+          <p class="auth-hint">
+            Already have an account?
+            <a class="link" href="/auth/login">Sign in</a>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
